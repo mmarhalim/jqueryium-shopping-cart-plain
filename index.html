@@ -18,6 +18,57 @@
     <link href="css/custom.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <table class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Unit Price ($)</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Subtotal ($)</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="orig">
+                <td class="item">Lean Chicken Breast</td>
+                <td class="price"><input name="price" type="text" min="0" value="5"></td>
+                <td class="quant"><input name="quant" type="number" min="1" value="1"></td>
+                <td class="subtotal"></td>
+                <td><button class="remove">Remove</button></td>
+              </tr>
+              <tr class="orig">
+                <td class="item">Protein Bar</td>
+                <td class="price"><input name="price" type="text" min="0" value="2"></td>
+                <td class="quant"><input name="quant" type="number" min="1" value="1"></td>
+                <td class="subtotal"></td>
+                <td><button class="remove">Remove</button></td>
+              </tr>
+              <tr>
+                <!-- <form id="addItem"> -->
+                  <td class="item"><input type="text" name="item" placeholder="New Item" id="a" required /></td>
+                  <td class="price"><input type="text" name="price" placeholder="Price" id="b" required /></td>
+                  <td class="quant"><input type="number" name="quant" placeholder="Quantity" min="1" id="c" required /></td>
+                  <td class="subtotal"></td>
+                  <td><button id="addItem">Add</button></td>
+                <!-- </form>-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9">
+          <h2>Total Price:</h2>
+        </div>
+        <div class="col-xs-3">
+          <h2 id="total"></h2>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
